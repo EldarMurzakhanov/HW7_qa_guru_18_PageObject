@@ -19,7 +19,7 @@ public class RegistrationPage {
             firstNameInput = $("#firstName"),
             lastNameInput = $("#lastName"),
             EmailInput = $("#userEmail"),
-            GenderRadio = $("#gender-radio-2"),
+            GenderRadio = $("#genterWrapper"),
             PhoneInput = $("#userNumber"),
             DateOfBirthInput = $("#dateOfBirthInput"),
             SubjectInput = $("#subjectsInput"),
