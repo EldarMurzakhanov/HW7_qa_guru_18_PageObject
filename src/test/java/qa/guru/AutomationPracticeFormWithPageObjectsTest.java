@@ -1,8 +1,11 @@
 package qa.guru;
 
 import org.junit.jupiter.api.Test;
+import pages.RegistrationPage;
 
 public class AutomationPracticeFormWithPageObjectsTest extends TestBase {
+
+    RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
     void fillFormTest() {
@@ -19,10 +22,10 @@ public class AutomationPracticeFormWithPageObjectsTest extends TestBase {
         String UserPicture = "no-homo-sapiens.png";
         String UserAddress = "10 Crestwood DrHudson currentAddress";
         String UserState = "NCR";
-        String UserCity= "Delhi";
+        String UserCity = "Delhi";
 
         registrationPage.openPage()
-
+                .removeBanners()
                 .setFirstName(userName)
                 .setLastName(lastName)
                 .setEmail(userEmail)
@@ -30,13 +33,13 @@ public class AutomationPracticeFormWithPageObjectsTest extends TestBase {
                 .setPhone(userPhone)
                 .setBirthDate(userBirthDayDay, userBirthDayMonth, userBirthDayYear)
                 .setSubject(userSubject)
-                .setHobbies(userHobbies)
+                .setHobby(userHobbies)
                 .setPicture(UserPicture)
                 .setAddress(UserAddress)
                 .setState(UserState)
                 .setCity(UserCity)
 
-                .pushSubmit();
+                .sendSubmit();
 
         registrationPage.verifyResultsModalAppears()
                 .verifyResult("Student Name", userName + " Nalaar")
