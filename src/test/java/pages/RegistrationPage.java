@@ -14,7 +14,22 @@ public class RegistrationPage {
     private final String TITLE_TEXT = "Student Registration Form";
     private final CalendarComponent calendarComponent = new CalendarComponent();
     private final RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
-    private final SelenideElement firstNameInput = $("#firstName"), lastNameInput = $("#lastName"), emailInput = $("#userEmail"), genderRadio = $("#genterWrapper"), phoneInput = $("#userNumber"), dateOfBirthInput = $("#dateOfBirthInput"), subjectInput = $("#subjectsInput"), hobbiesInput = $("#hobbiesWrapper"), pictureUpload = $("#uploadPicture"), addressInput = $("#currentAddress"), stateInput = $("#state"), stateDropDown = $("#stateCity-wrapper"), cityInput = $("#city"), cityDropDown = $("#stateCity-wrapper"), submitButton = $("#submit");
+    private final SelenideElement
+            firstNameInput = $("#firstName"),
+            lastNameInput = $("#lastName"),
+            emailInput = $("#userEmail"),
+            genderRadio = $("#genterWrapper"),
+            phoneInput = $("#userNumber"),
+            dateOfBirthInput = $("#dateOfBirthInput"),
+            subjectInput = $("#subjectsInput"),
+            hobbiesInput = $("#hobbiesWrapper"),
+            pictureUpload = $("#uploadPicture"),
+            addressInput = $("#currentAddress"),
+            stateInput = $("#state"),
+            stateDropDown = $("#stateCity-wrapper"),
+            cityInput = $("#city"),
+            cityDropDown = $("#stateCity-wrapper"),
+            submitButton = $("#submit");
 
 
     public RegistrationPage openPage() {

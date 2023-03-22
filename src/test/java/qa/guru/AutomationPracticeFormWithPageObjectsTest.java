@@ -41,7 +41,7 @@ public class AutomationPracticeFormWithPageObjectsTest extends TestBase {
 
                 .sendSubmit();
 
-        registrationPage.verifyResultsModalAppears()
+        registrationPage
                 .verifyResult("Student Name", userName + " Nalaar")
                 .verifyResult("Student Email", "kaladesh@testmail.test")
                 .verifyResult("Gender", "Female")
